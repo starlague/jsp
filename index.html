@@ -7,60 +7,78 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <nav>
-        <h1><img id="logo" src="https://img.freepik.com/vektoren-premium/star-plane-logo-design-vector-illustration-modernes-monogramm-symbol_553860-667.jpg" alt=""></h1>
-            <form class="search-bar" role="search">
-                <label for="search-destination" class="visually-hidden">Rechercher une destination</label>
-                <input type="search" class="recherche" name="search-destination" placeholder="Rechercher une destination">
-                <button type="submit" aria-label="Rechercher">
-                    <img class="gran" src="https://cdn-icons-png.flaticon.com/512/54/54481.png" alt="">
-                </button> 
-            </form>    
-    </nav>
-    <ul>
-        <button type="button" >Filtre</button>     
-        <button type="button" >Prix</button> 
-        <button type="button" >Nouveauté</button>  
-        <button type="button" >Pertinence</button>     
-    </ul> 
-    <section class="enorme" aria-labelledby="hoberge" >
-        <h2 id="hoberge">Hébergements </h2>
+
+    <header>
+        <h1><img class="logo" src="https://img.freepik.com/vektoren-premium/star-plane-logo-design-vector-illustration-modernes-monogramm-symbol_553860-667.jpg" alt=""></h1>
+        <form class="search-bar" role="search">
+            <label for="search-destination" class="visually-hidden">Rechercher une destination</label>
+            <input type="search" id="search-destination" name="search-destination" placeholder="Rechercher une destination">
+            <button type="submit" aria-label="Rechercher">
+                <img src="https://cdn-icons-png.flaticon.com/512/54/54481.png" alt="">
+            </button> 
+        </form>    
+    </header>
+
+    <section aria-labelledby="filters-title">
+        <h2 id="filters-title" class="visually-hidden">Filtres</h2>
+        <div>
+            <button type="button" >Filtre</button>     
+            <button type="button" >Prix</button> 
+            <button type="button" >Nouveauté</button>  
+            <button type="button" >Pertinence</button>     
+        </div>
+    </section>
+    
+    <main>
+        <section aria-labelledby="accommodations-title" >
+            <h2 id="accommodations-title">Hébergements</h2>
            
             <article> 
-                <img class="hotel" src="https://media-cdn.tripadvisor.com/media/photo-s/16/1a/ea/54/hotel-presidente-4s.jpg" alt="">
-                <h3>Hôtel 1</h3>
+                <img src="https://media-cdn.tripadvisor.com/media/photo-s/16/1a/ea/54/hotel-presidente-4s.jpg" alt="Image de l'Hôtel 1">
+                <header>
+                    <h3>Hôtel 1</h3>
+                </header>
                 <p>Nuit à partir de ... €</p>
             </article>
            
-            <article>
-                <img class="hotel" src="https://media-cdn.tripadvisor.com/media/photo-s/16/1a/ea/54/hotel-presidente-4s.jpg" alt="">
-                <h3>Hôtel 2</h3>
+            <article>   
+                <img src="https://cf.bstatic.com/xdata/images/hotel/max1024x768/518332246.jpg?k=852d9e83009ac082a7bb8366d5e27fb1f21801ea9cb6dde9c14e1aa99c49ea63&o=&hp=1" alt="Image de l'Hôtel 2">
+                <header>
+                    <h3>Hôtel 2</h3>
+                </header>
                 <p>Nuit à partir de ... €</p>
             </article>
             
             <article>
-                <img class="hotel" src="https://media-cdn.tripadvisor.com/media/photo-s/16/1a/ea/54/hotel-presidente-4s.jpg" alt="">
-                <h3>Hôtel 3</h3>
+                <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/2b/ae/75/0f/brit-hotel-dax-exterieur.jpg?w=700&h=-1&s=1" alt="Image de l'Hôtel 3">
+                <header>
+                    <h3>Hôtel 3</h3>
+                </header>
                 <p>Nuit à partir de ... €</p>
             </article>
             
             <article>
-                <img class="hotel" src="https://media-cdn.tripadvisor.com/media/photo-s/16/1a/ea/54/hotel-presidente-4s.jpg" alt="">
-                <h3>Hôtel 4</h3>
+                <img src="https://cf.bstatic.com/xdata/images/hotel/max1024x768/296624070.jpg?k=26d009d2e951608e2baa6d3675d2f2fbd1ddbfcb0f97fc1a74eb9ee9fcdf5216&o=&hp=1" alt="Image de l'Hôtel 4">
+                <header>
+                    <h3>Hôtel 4</h3>
+                </header>    
                 <p>Nuit à partir de ... €</p>
             </article>
             
             <article>
-                <img class="hotel" src="https://media-cdn.tripadvisor.com/media/photo-s/16/1a/ea/54/hotel-presidente-4s.jpg" alt="">
-                <h3>Hôtel 5</h3>
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/1b/Cordoba_Center_Hotel_in_Cordoba%2C_Spain.jpg/1200px-Cordoba_Center_Hotel_in_Cordoba%2C_Spain.jpg" alt="Image de l'Hôtel 5">
+                <header>
+                    <h3>Hôtel 5</h3>
+                </header>
                 <p>Nuit à partir de ... €</p>
             </article>
             
-            <article>
-                <img class="hotel" src="https://media-cdn.tripadvisor.com/media/photo-s/16/1a/ea/54/hotel-presidente-4s.jpg" alt="">
+            <article><!--changer l'image-->
+                <img src="https://photos.hotelbeds.com/giata/bigger/01/015312/015312a_hb_a_036.jpg" alt="Image de l'Hôtel 6">
                 <h3>Hôtel 6</h3>
                 <p>Nuit à partir de ... €</p>
             </article>
-    </section>
+        </section>
+    </main>
 </body>
 </html>

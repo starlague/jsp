@@ -1,65 +1,122 @@
-#logo{
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+h1, h2, h3 {
+    margin: 0;
+}
+
+.logo{
     width: min-content;
-    height: 80px;
+    height: 10vh;
     display: flex;
     margin-left: auto;
     margin-right: auto;
 }
-.gran{
-    height: 30px;
-    width: 30px;
-}
-    
 
-#hoberge{
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    margin-left: 10%;
-}
-.enorme{
-    background-color: rgb(112, 164, 164);
-    width: 100%;
-    height: max-content;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr;
-    border-radius: 5%;
-    
-}
-ul{
-    list-style: none;
-}
-button{
-    border: 20px rgb(120, 31, 31);
-    display: inline;
-}
-.recherche{
-    width: 100%;
-    height: 30px;
-}
-h3{
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-}
-p{
-    font-family: cursive;
-}
-.hotel{
-    height: 108px;
-    width: 192px;
-    padding-top: 2%;
-    padding-left: 2%;
-    padding-right: 2%;
-    border-top-left-radius: 13%;
-    border-top-right-radius: 13%;
-    
-}
-article{
-    width: min-content;
-    height: min-content;
+.search-bar {
     display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    background-color: aliceblue;
-    justify-items: flex-start;
-    border-radius: 10%;
-    order: 3;
+    align-items: center;
+    width: 100%;
+    margin-left: 3%;
+    margin-right: auto; 
 }
+
+.search-bar input {
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    width: 90%;
+}
+
+.search-bar button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+.search-bar button img {
+    height: 5%;
+    width: 1vw;
+}
+
+section[aria-labelledby="filters-title"] {
+    
+    padding: 2% 2%;
+    background-color: #fff;
+    display: flex;
+    margin-left: 1%;
+}
+
+button {
+    padding: 8px 12px;
+    border: 0.5% solid #ccc;
+    border-radius: 10%;
+    cursor: pointer;
+    background-color: #f4f4f4;
+}
+
+button:hover {
+    background-color: #ddd;
+}
+
+main {
+    padding: 2%;
+    width: 90%;
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: rgb(137, 213, 226);
+    border-radius: 10%;
+}
+
+h2 {
+    margin-bottom: 1%;
+    color: #333;
+}
+
+article {
+    background-color: #fff;
+    padding: 1%;
+    border-radius: 10%;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    display: inline-block;
+    width: 30%;
+    
+}
+
+article img {
+    width: 100%;
+    height: 100%;
+    border-top-left-radius: 10%;
+    border-top-right-radius: 10%;
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+article h3 {
+    margin: 15px 0 10px;
+    color: #555;
+}
+
+article p {
+    font-size: 16px;
+    color: #888;
+}
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    border: 0;
+}
+
+
