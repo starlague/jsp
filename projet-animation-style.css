@@ -1,6 +1,6 @@
 /* Styles généraux */
 body {
-    font-family: Arial, sans-serif;
+    font-family: cursive;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -16,7 +16,6 @@ header nav ul {
 
 header nav ul li a {
     color: white;
-    font-family: cursive;
     text-decoration: none;
     padding: 15px;
     display: block;
@@ -26,7 +25,6 @@ header nav ul li a {
 a:hover {
     color: #333;
     font-size: 120%;
-    font-family: cursive;
     transition:color 0.5s ease
 }
 
