@@ -1,0 +1,97 @@
+/* Styles généraux */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header nav ul {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    justify-content: space-around;
+    background-color: #e2d0d0;
+}
+
+header nav ul li a {
+    color: white;
+    font-family: cursive;
+    text-decoration: none;
+    padding: 15px;
+    display: block;
+    cursor: pointer;
+}
+
+a:hover {
+    color: #333;
+    font-size: 120%;
+    font-family: cursive;
+    transition:color 0.5s ease
+}
+
+/* Bannière */
+.banner {
+    text-align: center;
+    padding: 50px;
+    background-color: #8ba896;
+    color: white;
+}
+
+.cta-btn {
+    padding: 10px 20px;
+    background-color: #e74c3c;
+    color: white;
+    font-family: cursive;
+    border: none;
+    cursor: pointer;
+    transition:rotate(180deg) 0.5s ease;
+}
+
+.cta-btn:hover {
+    background-color: aqua;
+    color: black;
+    font-family: cursive;
+    transform: rotate(180deg);
+}
+
+/* Galerie d'images */
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 15px;
+    padding: 20px;
+}
+
+.gallery img {
+    width: 100%;
+    cursor: crosshair;
+    transition: rotate(180deg) 0.5s ease;
+    transition: invert(100%) 0.5 ease;
+}
+
+img:hover {
+    transform: rotate(180deg);
+    filter: invert(100%);
+}
+
+/* Vidéo */
+.video-section {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+
+.video-section iframe {
+    width: 100%;
+    max-width: 800px;
+}
+
+/* Pied de page */
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #333;
+    color: white;
+    font-family: cursive;
+}
